@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=[Google-Tag-ID]"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', '[Google-Tag-ID]');
+    </script>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>مصحة مرخصة ومركز علاج معتمد</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hd">
+        <button id="menu-toggle">☰ القائمة</button>
+        <button class="bn" onclick="return gtag_report_conversion('tel:[رقم الهاتف]')"><i class="fas fa-phone"></i> [رقم الهاتف]</button>
+    </div>
+
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">افضل مستشفي وارخص مصحة نفسية<span class="offer-badge">خصم 20% للتواصل الآن</span></h1>
+            <p class="hero-subtitle">لست وحدك، نحن نقدم لك بيئة آمنة وبرامج علاجية متكاملة تحت إشراف أطباء ومعالجين متخصصين</p>
+            <div class="marketing-badge">
+                رعاية طبية فائقة التميز بأسعار اقتصادية لا تقبل المنافسة
+            </div>
+            <div class="hero-badges">
+                <div class="hero-badge"><i class="fas fa-comments"></i> استشارة مجانية</div>
+                <div class="hero-badge"><i class="fas fa-stethoscope"></i> كشف مجاني</div>
+                <div class="hero-badge"><i class="fas fa-ambulance"></i> نقل المرضى</div>
+                <div class="hero-badge"><i class="fas fa-file-medical"></i> متابعة بعد العلاج</div>
+            </div>
+            <a onclick="return gtag_report_conversion('tel:[رقم الهاتف]');" href="tel:[رقم الهاتف]" class="hero-cta"><i class="fas fa-phone"></i> اتصل الآن - خدمة 24/7</a>
+        </div>
+    </div>
+
+    <div id="aboutus" class="tt">
+        <h1>مصحة مرخصة ومركز علاج معتمد</h1>
+        <h2>نساعدك ومن تحب على التعافي</h2>
+    </div>
+
+    <div class="tb" x-data="{a:'p1'}" x-init="setInterval(()=&gt;{a=a==='p1'?'p2':a==='p2'?'p3':'p1'},7000)">
+        <div class="hh">
+            <label :class="{a:a==='p1'}" @click="a='p1'" class="">نحن معك</label>
+            <label :class="{a:a==='p2'}" @click="a='p2'" class="a">الكادر الطبي</label>
+            <label :class="{a:a==='p3'}" @click="a='p3'" class="">البرامج العلاجية</label>
+        </div>
+        <div class="cc">
+            <div class="pp" x-show="a==='p1'" x-transition="" style="display: none;">
+                <h4>أنت لست وحدك, نحن معك</h4>
+                <p>خطوتك الأولى نحو التعافي تبدأ بمكالمة. نقدم استشارة أولية مجانية لتقييم حالتك ووضع خطة علاج مناسبة.</p>
+            </div>
+            <div class="pp" x-show="a==='p2'" x-transition="">
+                <h4>نساعدك ومن تحب على التعافي</h4>
+                <p style="text-align: center;">فى مصحة لدينا خبراء وفريق طبي وتمريض، وأطباء وأساتذة علم نفس واستشاري نفسي وأخصائي اجتماعي</p>
+            </div>
+            <div class="pp" x-show="a==='p3'" x-transition="" style="display: none;">
+                <h4>برامج علاجية عالمية <span class="offer-badge">خبرة 20 عاماً</span></h4>
+                <p>يشمل البرنامج العلاجي سحب السموم، التأهيل النفسي، والعلاج الجماعي. نقدم برامج حديثة توفر لك طريقًا آمنًا للتعافي.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="licenses" class="ls">
+        <p class="tl"><i class="fas fa-certificate"></i> التراخيص والتصاريح الرسمية</p>
+        <div class="lg">
+            <div class="lb"><i class="fas fa-id-card"></i> وزارة الصحة<br>[رقم الترخيص 1]</div>
+            <div class="lb"><i class="fas fa-id-card"></i> العلاج الحر<br>[رقم الترخيص 2]</div>
+            <div class="lb"><i class="fas fa-id-card"></i> نقابة الاطباء<br>[رقم الترخيص 3]</div>
+        </div>
+        <p style="text-align:center;margin-top:15px;color:#64748b;font-size:14px">مرخصة من وزارة الصحة ونقابة الأطباء والعلاج الحر</p>
+    </div>
+
+    <div id="staff" class="st">
+        <p class="tl">كادرنا الطبي المتخصص</p>
+        <div class="sg">
+            <div class="sb"><i class="fas fa-user-md"></i> 15+ طبيب<br>استشاري</div>
+            <div class="sb"><i class="fas fa-brain"></i> أخصائيين<br>علم نفس</div>
+            <div class="sb"><i class="fas fa-heart"></i> استشاريين<br>نفسيين</div>
+            <div class="sb"><i class="fas fa-users"></i> أخصائيين<br>اجتماعيين</div>
+        </div>
+        <p style="text-align:center;margin-top:15px;color:#64748b;font-size:14px">فريق متكامل من الخبراء ذوي الخبرة الطويلة في مجال العلاج النفسي</p>
+    </div>
+
+    <div id="packages" class="pd">
+        <p class="tl">اسعار اقتصادية</p>
+        <div class="pc">
+            <div class="pb"><i class="fas fa-hand-holding-usd"></i> اسعار مناسبة<br><p>اسعار علاجية تناسب الجميع مع مرونة في الدفع <br> شاملة الإقامة الكاملة والمتابعة المستمرة</p></div>
+        </div>
+        <button style="background:linear-gradient(90deg,var(--primary-color),var(--secondary-color));color:var(--light-text);border:0;padding:12px 25px;border-radius:8px;cursor:pointer;font-size:16px;font-weight:600;margin:15px auto;display:block;transition:all 0.3s ease;box-shadow:0 4px 6px rgba(0,0,0,0.1)" onclick="return gtag_report_conversion('tel:[رقم الهاتف]')">اتصل لمعرفة التفاصيل والاسعار</button>
+    </div>
+
+    <div id="steps" class="ct">
+        <div class="dv">رحلة التعافي</div>
+        <p>نوفر لك ولمن تحب بيئة آمنة وصحية ووسائل ترفية وكادر طبي على أعلى مستوى لضمان رحلتك نحو التعافي</p>
+        <ol>
+            <li>أستشارة مجانية</li>
+            <li>نقل المريض للمصحة</li>
+            <li>كشف وتقييم طبي كامل</li>
+            <li>سحب السموم بدون ألم</li>
+            <li>علاج نفسي وتأهيل سلوكي</li>
+            <li>متابعة مستمرة بعد التعافي</li>
+        </ol>
+        <button onclick="return gtag_report_conversion('tel:[رقم الهاتف]')">أبدء الان - أتصل بنا</button>
+    </div>
+
+    <div id="prog" class="pg">
+        <p class="tl">البرامج العلاجية</p>
+        <div class="gd">
+            <button class="bg" data-p="1"><i class="fas fa-bullhorn"></i> برنامج التعزيز التحفيزي<small>بناء الدافعية الداخلية للتعافي</small></button>
+            <button class="bg" data-p="3"><i class="fas fa-brain"></i> العلاج النفسي الديناميكي<small>تحليل التجارب الماضية والصراعات</small></button>
+            <button class="bg" data-p="2"><i class="fas fa-comments"></i> العلاج النفسي والسلوكي<small>تغيير أنماط التفكير والسلوك</small></button>
+            <button class="bg" data-p="4"><i class="fas fa-clipboard-check"></i> مرحلة التأهيل والمتابعة<small>الاندماج المجتمعي والوقاية من الانتكاس</small></button>
+        </div>
+    </div>
+
+    <div id="gallery" class="gs">
+        <p class="tl">بيئة علاجية متكاملة</p>
+        <div class="gc">
+            <div class="gi"><img src="images/WhatsApp Image 2026-08-26 at 4.40.26 PM (4).jpeg" alt="الأنشطة الترفيهية" loading="lazy"></div>
+            <div class="gi"><img src="images/WhatsApp Image 2026-08-26 at 4.40.25 PM (2).jpeg" alt="غرف العلاج" loading="lazy"></div>
+            <div class="gi"><img src="images/5bcad501-0379-4e5c-994f-995058256915.jpeg" alt="مناطق الراحة" loading="lazy"></div>
+            <div class="gi"><img src="images/6ab75d28-4d01-422a-82b3-0694f09dcdbf.jpeg" alt="الأنشطة الترفيهية" loading="lazy"></div>
+            <div class="gi"><img src="images/WhatsApp Image 2026-08-26 at 4.40.24 PM.jpeg" alt="غرف العلاج" loading="lazy"></div>
+            <div class="gi"><img src="images/6fe26ad9-0b02-4697-99e0-e1cc8078b5c1.jpeg" alt="غرفة فردية" loading="lazy"></div>
+        </div>
+    </div>
+
+    <div id="mv" class="vl">
+        <div class="bx">
+            <button class="xc">×</button>
+            <h2 id="mt"></h2>
+            <p id="mb"></p>
+        </div>
+    </div>
+
+    <div id="faqs" class="co">
+        <p class="hd2">إجابات لأهم الأسئلة:</p>
+        <button class="bt">
+            <span>كيف يمكنني البدء في العلاج؟</span>
+            <span class="ic"></span>
+        </button>
+        <div class="pn">
+            <p>يمكنك البدء بالاتصال بنا على الرقم الموجود في أعلى الصفحة لتحديد موعد للاستشارة الأولية المجانية، حيث سنقوم بتقييم حالتك ووضع خطة العلاج المناسبة.</p>
+        </div>
+
+        <button class="bt">
+            <span>هل المصحة معتمدة من الجهات الرسمية؟</span>
+            <span class="ic"></span>
+        </button>
+        <div class="pn">
+            <p>نعم، المصحة معتمدة ومرخصة من نقابة الأطباء ووزارة الصحة المصرية، ونلتزم بأعلى معايير الجودة والسلامة في تقديم خدماتنا.</p>
+        </div>
+
+        <button class="bt">
+            <span>ما مدة برامج العلاج؟</span>
+            <span class="ic"></span>
+        </button>
+        <div class="pn">
+            <p>تختلف مدة البرامج العلاجية حسب حالة كل مريض، ولكنها تتراوح عادة بين 3 إلى 6 أشهر، تشمل مراحل السحب والتأهيل والمتابعة.</p>
+        </div>
+
+        <button class="bt">
+            <span>هل تقدمون باقات علاجية اقتصادية؟</span>
+            <span class="ic"></span>
+        </button>
+        <div class="pn">
+            <p>نعم، نقدم باقات علاجية تناسب جميع الإمكانيات مع إمكانية التقسيط وتسهيلات في الدفع. يمكنك الاتصال بنا لمعرفة التفاصيل المناسبة لحالتك.</p>
+        </div>
+
+        <button class="bt">
+            <span>ما هو عدد الأطباء والمتخصصين في المصحة؟</span>
+            <span class="ic"></span>
+        </button>
+        <div class="pn">
+            <p>يضم فريقنا أكثر من 15 طبيب استشاري متخصص في العلاج النفسي، بالإضافة إلى أخصائيين علم نفس، استشاريين نفسيين، وأخصائيين اجتماعيين.</p>
+        </div>
+    </div>
+
+    <div class="c3">
+        <h4>[اسم المصحة] بيئة علاجية متكاملة</h4>
+        <p>نوفر في مصحتنا بيئة علاجية متكاملة تشمل غرف مريحة، أنشطة ترفيهية، ومساحات للراحة والاسترخاء، مع كادر طبي متخصص على أعلى مستوى من الخبرة والكفاءة.</p>
+    </div>
+
+    <div class="fl" data-tooltip="تواصل واتساب" onclick="return gtag_report_conversion('https://wa.me/[رقم الواتساب]?text=أرغب في الاستفسار عن برامج العلاج')"><i class="fab fa-whatsapp"></i></div>
+    <a href="tel:[رقم الهاتف]" class="fr" data-tooltip="اتصال مباشر" style="text-decoration:none;" onclick="return gtag_report_conversion('tel:[رقم الهاتف]')"><i class="fas fa-phone-alt"></i></a>
+
+    <footer class="ft" style="text-align:center">
+        <div id="contact" class="ft-content">
+            <div class="ft-section">
+                <h3>[اسم المصحة / المستشفى]</h3>
+                <p><i class="fas fa-phone"></i> [رقم الهاتف]</p>
+                <p><i class="fas fa-map-marker-alt"></i>الفروع: [أماكن الفروع]</p>
+                <a href="[رابط خرائط جوجل]" target="_blank"><i class="fas fa-map"></i> عرض على الخريطة</a>
+            </div>
+            <div id="certificates" class="ft-section">
+                <h3>التصاريح والتراخيص</h3>
+                <div class="license-badge"><i class="fas fa-id-card"></i> وزارة الصحة: [رقم الترخيص 1]</div>
+                <div class="license-badge"><i class="fas fa-id-card"></i> العلاج الحر: [رقم الترخيص 2]</div>
+                <div class="license-badge"><i class="fas fa-id-card"></i> نقابة الاطباء: [رقم الترخيص 3]</div>
+                <p style="font-size: 14px; margin: 5px 0; color: rgba(255, 255, 255, 0.7);">
+                    * إخلاء مسؤولية: المعلومات في هذا الموقع هي لأغراض تثقيفية فقط. الموقع ليس بديلاً عن الاستشارة الطبية المتخصصة, يُرجى استشارة طبيب متخصص قبل اتخاذ أي قرارات علاجية.
+                </p>
+            </div>
+        </div>
+        <div class="ft-bottom">
+            <p>جميع الحقوق محفوظة لـ [اسم المصحة] &copy; 2026</p>
+            <div class="ft-links">
+                <a href="privacy.html">سياسة الخصوصية</a>
+                <a href="terms.html">شروط الاستخدام</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="menu-header">
+            <h3>القائمة الرئيسية</h3>
+            <button class="close-menu" id="closeMenu">×</button>
+        </div>
+        <div class="menu-items">
+            <a href="#" class="menu-item"><i class="fas fa-home"></i> الرئيسية</a>
+            <a href="#licenses" class="menu-item"><i class="fas fa-id-card"></i> التراخيص والتصاريح</a>
+            <a href="#staff" class="menu-item"><i class="fas fa-user-md"></i> الكادر الطبي</a>
+            <a href="#packages" class="menu-item"><i class="fas fa-hand-holding-usd"></i> الباقات الاقتصادية</a>
+            <a href="#prog" class="menu-item"><i class="fas fa-stethoscope"></i> البرامج العلاجية</a>
+            <a href="#gallery" class="menu-item"><i class="fas fa-images"></i> معرض الصور</a>
+            <a href="#steps" class="menu-item"><i class="fas fa-user-md"></i> مراحل التعافي</a>
+            <a href="#faqs" class="menu-item"><i class="fas fa-question-circle"></i> الأسئلة الشائعة</a>
+            <a onclick="return gtag_report_conversion('tel:[رقم الهاتف]');" href="tel:[رقم الهاتف]" class="menu-item" style="background:var(--secondary-color);color:white"><i class="fas fa-phone-alt"></i> اتصل الآن: [رقم الهاتف]</a>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
